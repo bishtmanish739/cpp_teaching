@@ -55,7 +55,7 @@ cout<<f<<endl; //8
 int x=10;
 int y=10;
 cout<<" hands on"<<endl;
-cout<<x<<" "<< ++x + x--<<endl;
+cout<< ++x + x--<<endl;
 /// will explain later
 
 cout<<x<<endl;
