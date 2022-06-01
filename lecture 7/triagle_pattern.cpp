@@ -1,43 +1,45 @@
-#include<iostream>
-using namespace std;
 /*
-* * * * *
-  * * * *
-    * * *
-      * *
+
         *
+       * *
+      * * *
+     * * * *
+    * * * * *
 
-        row 1 => 5, 0 space
-        row 2 => 4 ,1 space
-        row 3 => 3, 2 space
-        row 4 => 2 ,3 space
-        row 5= 1, 4 space
+    // s+sapce=1, space=4
+    // 2, space=3
+    // 3, 2
+    //4 , 1
+    // 5,0
 
-        space+ star=5;
-        space= 5-star;
-
-
+    // star+ space= 5;
 
 */
+
+#include<iostream>
+using namespace std;
+
 int main(){
-    for(int row =5;row>0 ;row--){
+    for(int row =1;row<=5 ;row++){
+            // row == star
             int space=5-row;
             while(space>0){
                 cout<<" ";
                 space--;
             }
             for(int star=0;star<row;star++){
-                cout<<"*";
+                cout<<"* ";
             }
             cout<<endl;
 
 
 
     }
+    cout<<endl;
 
     // using while loop
-    int row=5;
-    while(row>0){
+    int row=1;
+    while(row<=5){
             int space=5-row;
             while(space>0){
                     cout<<" ";
@@ -45,11 +47,11 @@ int main(){
             }
             int star=0;
             while(star<row){
-                cout<<"*";
+                cout<<"* ";
                 star++;
             }
             cout<<endl;
-        row--;
+        row++;
     }
 
 }
