@@ -1,16 +1,26 @@
 #include<iostream>
 using namespace std;
-int sumOfArray(){
-    int sum=0;
-}
+
+
 int main(){
     int length;
-    cin>>length;
-    cout<<"enter length of array"<<endl;
-    int arr[10];
-    for(int i=0;i<length;i++){
 
+    cout<<"enter length of array"<<endl;
+     cin>>length;
+
+    int arr[10];
+    int sum=0;
+    for(int i=0;i<length;i++){
+        cin>>arr[i];
     }
+    for(int i=0;i<length;i++){
+        sum+=arr[i];
+            // a+=1 ==> a=a+1;
+          // sum+=arr[i]    ==> sum=sum+arr[i];
+    }
+    cout<<"sum of array is"<<sum<<endl;
+
+
 
 
 
